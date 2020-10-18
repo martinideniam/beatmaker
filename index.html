@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Beat Maker</title>
+</head>
+<body>
+    <main>
+        <div class="drumbox">
+            <h1 class='title' id='main-title'>Beat Maker</h1>
+            <h1 class='title' id='hidden-title'>Rotate screen</h1>
+            <div class="kick kick-snare-hihat">
+                <div class="controls">
+                    <div><p class="mute-kick mute">Mute</p></div>
+                    <div class="select-sound">
+                        <label for="select-kick">Select sound -></label>
+                        <select name="select-kick" id="select-kick" class='select-sounds'>
+                            <option value="1">KickS  1</option>
+                            <option value="2">KickS  2</option>
+                            <option value="3">KickS  3</option>
+                        </select>
+                    </div>
+                    <div class='volume-div'>
+                        <label class='volume-kick-label' for="volume-kick">100%</label>
+                        <input class='range' type="range" name="volume-kick" id="volume-kick" min=0 max=100 value="100" >
+                    </div>
+                </div>
+                <div class="pads">
+                    <div class="pad p0 kick-pad"></div>
+                    <div class="pad p1 kick-pad"></div>
+                    <div class="pad p2 kick-pad"></div>
+                    <div class="pad p3 kick-pad"></div>
+                    <div class="pad p4 kick-pad"></div>
+                    <div class="pad p5 kick-pad"></div>
+                    <div class="pad p6 kick-pad"></div>
+                    <div class="pad p7 kick-pad"></div>
+                </div>
+            </div>
+            <div class="snare kick-snare-hihat">
+                <div class="controls">
+                    <div><p class="mute-snare mute">Mute</p></div>
+                    <div class="select-sound">
+                        <label for="select-snare">Select sound -></label>
+                        <select name="select-snare" id="select-snare" class='select-sounds'>
+                            <option value="1">Snare  1</option>
+                            <option value="2">Snare  2</option>
+                            <option value="3">Snare  3</option>
+                        </select>
+                    </div>
+                    <div class='volume-div'>
+                        <label class='volume-snare-label' for="volume-snare">100%</label>
+                        <input class='range' type="range" name="volume-snare" id="volume-snare" min=0 max=100 value="100">
+                    </div>
+                </div>
+                <div class="pads">
+                    <div class="pad p0 snare-pad"></div>
+                    <div class="pad p1 snare-pad"></div>
+                    <div class="pad p2 snare-pad"></div>
+                    <div class="pad p3 snare-pad"></div>
+                    <div class="pad p4 snare-pad"></div>
+                    <div class="pad p5 snare-pad"></div>
+                    <div class="pad p6 snare-pad"></div>
+                    <div class="pad p7 snare-pad"></div>
+                </div>
+            </div>
+            <div class="hihat kick-snare-hihat">
+                <div class="controls">
+                    <div><p class="mute-hihat mute">Mute</p></div>
+                    <div class="select-sound">
+                        <label for="select-hihat">Select sound -></label>
+                        <select name="select-hihat" id="select-hihat" class='select-sounds'>
+                            <option value="1">Hihat 1</option>
+                            <option value="2">Hihat 2</option>
+                            <option value="3">Hihat 3</option>
+                        </select>
+                    </div>
+                    <div class='volume-div'>
+                        <label class='volume-hihat-label' for="volume-hihat">100%</label>
+                        <input class='range' type="range" name="volume-hihat" id="volume-hihat" min=0 max=100 value=100 >
+                    </div>
+                </div>
+                <div class="pads">
+                    <div class="pad p0 hihat-pad"></div>
+                    <div class="pad p1 hihat-pad"></div>
+                    <div class="pad p2 hihat-pad"></div>
+                    <div class="pad p3 hihat-pad"></div>
+                    <div class="pad p4 hihat-pad"></div>
+                    <div class="pad p5 hihat-pad"></div>
+                    <div class="pad p6 hihat-pad"></div>
+                    <div class="pad p7 hihat-pad"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="play">Play</button>
+                <div class='tempo-div'>
+                    <label class='tempo-label' for="tempo">120</label>
+                    <input class='range' type="range" name="tempo" id="tempo" min=60 max=200 value="120" >
+                </div>
+                <button class="night-mode night">Day</button>
+            </div>
+        </div>
+    </main>
+    <audio class='kick-audio' src="./sound/kick/1.wav"></audio>
+    <audio class='hihat-audio' src="./sound/hihat/1.wav"></audio>
+    <audio class='snare-audio' src="./sound/snare/1.wav"></audio>
+    <script src="./app.js"></script>
+</body>
+</html>
